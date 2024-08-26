@@ -1,0 +1,49 @@
+*
+
+body{
+    text-align: center;
+    color:black;
+    background-color:#ad4e1b;
+    background-color: rgba(144, 203, 44, 0);
+
+}
+header{
+ text-align: center;
+ font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS' sans-serif;
+ padding: auto;
+ height: auto;
+ width: auto;
+ font-size: xx-large;
+ }
+
+ input[type=password] {
+     margin: 0px;
+     text-align: center;
+     width: 50vh;
+     height: 5vH;
+     border-radius: 5px;
+ }
+
+ input[type=email] {
+     margin: 0px;
+     text-align: center;
+     width: 50vh;
+     height: 5vH;
+     border-radius: 5px;
+ }
+
+ button[type=submit]{
+    height:7vh;
+    width: 20vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+ }
+
+ a{
+    text-decoration: none;
+    color: black;
+    float: left;
+    margin-left: 510px;
+    margin-top: 20px;
+ }
+
