@@ -1,49 +1,64 @@
-*
+
 
 body{
+    
+     
+}
+
+.container{
+    display: flex;
     text-align: center;
-    color:black;
-    background-color:#ad4e1b;
-    background-color: rgba(144, 203, 44, 0);
+    justify-content: center;
+    align-items: center;
+    border: 100px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/cloud-forest-landscape.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
-header{
- text-align: center;
- font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS' sans-serif;
- padding: auto;
- height: auto;
- width: auto;
- font-size: xx-large;
- }
 
- input[type=password] {
-     margin: 0px;
-     text-align: center;
-     width: 50vh;
-     height: 5vH;
-     border-radius: 5px;
- }
+.box_login{
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(2px);
+    border: solid 1px white;
 
- input[type=email] {
-     margin: 0px;
-     text-align: center;
-     width: 50vh;
-     height: 5vH;
-     border-radius: 5px;
- }
+}
 
- button[type=submit]{
-    height:7vh;
-    width: 20vh;
-    box-sizing: border-box;
-    border-radius: 10px;
- }
+h1{
+    font-family:'Times New Roman', Times, serif;
+    font-style:normal;
+    font-size:larger;
+    font-display: flex;}
 
- a{
-    text-decoration: none;
-    color: black;
-    float: left;
-    margin-left: 510px;
-    margin-top: 20px;
- }
+label[for=email]{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70%;
+    box-shadow: none;
+}
+
+input[type=email]{
+    outline:none;
+    background-color: transparent;
+    border-style:groove;
+    border-radius: 4px;
+}
+
+label[for=password]{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70%;
+    box-shadow: none;
+
+}
+
+input[type=password]{
+    outline: none;
+    background-color: transparent;
+    border-style:groove;
+    border-radius: 4px;
+}
+
 
