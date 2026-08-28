@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Ordem de Serviço</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="menu">
+
+        <h2>OFICINA</h2>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="dashboard.html">Dashboard</a></li>
+
+                <li><a href="clientes.html">Clientes</a></li>
+
+                <li><a href="nova-os.html">Nova Ordem</a></li>
+
+                <li><a href="historico.html">Histórico</a></li>
+
+                <li><a href="relatorios.html">Relatórios</a></li>
+
+                <li><a href="perfil.html">Perfil</a></li>
+
+                <li><a href="login.html">Sair</a></li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <main class="conteudo">
+
+        <h1>Nova Ordem de Serviço</h1>
+
+        <form id="formOS">
+
+            <label>Cliente</label>
+
+            <select id="cliente" required>
+
+                <option value="">Selecione um cliente</option>
+
+            </select>
+
+            <label>Problema informado</label>
+
+            <textarea id="problema" rows="4" required></textarea>
+
+            <label>Serviço realizado</label>
+
+            <textarea id="servico" rows="4"></textarea>
+
+            <label>Peças utilizadas</label>
+
+            <textarea id="pecas" rows="4"></textarea>
+
+            <label>Valor (R$)</label>
+
+            <input
+                type="number"
+                id="valor"
+                step="0.01"
+                required
+            >
+
+            <label>Status</label>
+
+            <select id="status">
+
+                <option>Em andamento</option>
+
+                <option>Concluído</option>
+
+            </select>
+
+            <br><br>
+
+            <button type="submit">
+
+                Salvar Ordem
+
+            </button>
+
+        </form>
+
+    </main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/ordem.js"></script>
+
+</body>
+
+</html>

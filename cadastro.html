@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro - Sistema de Oficina</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="cadastro-container">
+
+        <div class="cadastro-box">
+
+            <h1>Sistema de Oficina</h1>
+
+            <h2>Cadastro da Oficina</h2>
+
+            <form id="cadastroForm">
+
+                <label for="oficina">
+                    Nome da Oficina
+                </label>
+
+                <input
+                    type="text"
+                    id="oficina"
+                    placeholder="Ex: Oficina do João"
+                    required
+                >
+
+                <label for="proprietario">
+                    Nome do Proprietário
+                </label>
+
+                <input
+                    type="text"
+                    id="proprietario"
+                    placeholder="Nome completo"
+                    required
+                >
+
+                <label for="telefone">
+                    Telefone
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    placeholder="(00) 00000-0000"
+                    required
+                >
+
+                <label for="cidade">
+                    Cidade
+                </label>
+
+                <input
+                    type="text"
+                    id="cidade"
+                    placeholder="Cidade"
+                    required
+                >
+
+                <label for="email">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+                <label for="senha">
+                    Senha
+                </label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Crie uma senha"
+                    required
+                >
+
+                <label for="confirmarSenha">
+                    Confirmar Senha
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmarSenha"
+                    placeholder="Repita a senha"
+                    required
+                >
+
+                <button type="submit">
+                    Cadastrar Oficina
+                </button>
+
+            </form>
+
+            <p id="mensagem"></p>
+
+            <hr>
+
+            <p>
+                Já possui uma conta?
+            </p>
+
+            <a href="login.html">
+                Fazer Login
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/storage.js"></script>
+    <script src="js/cadastro.js"></script>
+
+</body>
+
+</html>

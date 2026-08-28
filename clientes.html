@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes - Sistema de Oficina</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- MENU -->
+
+        <aside class="menu">
+
+            <h2>OFICINA</h2>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="dashboard.html">Dashboard</a></li>
+
+                    <li><a href="clientes.html">Clientes</a></li>
+
+                    <li><a href="nova-os.html">Nova Ordem</a></li>
+
+                    <li><a href="historico.html">Histórico</a></li>
+
+                    <li><a href="relatorios.html">Relatórios</a></li>
+
+                    <li><a href="perfil.html">Perfil</a></li>
+
+                    <li><a href="login.html">Sair</a></li>
+
+                    <li><a href="novosclientes.html"></a></li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+        <!-- CONTEÚDO -->
+
+        <main class="conteudo">
+
+            <header>
+
+                <h1>Clientes</h1>
+
+            </header>
+
+            <section class="acoes">
+
+                <input
+                    type="text"
+                    id="pesquisa"
+                    placeholder="Pesquisar por nome, CPF, telefone ou placa..."
+                >
+
+               <a href="novo-cliente.html" class="btn-novo">
+    Novo Cliente
+</a>
+
+            </section>
+
+            <section>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Placa</th>
+                            <th>Modelo</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <body id="listaClientes">
+
+                        <tr>
+
+                            <td colspan="6">
+
+                                Nenhum cliente cadastrado.
+
+                            </td>
+
+                        </tr>
+
+                    </body>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+  <script src="storage.js"></script>
+<script src="clientes.js"></script>
+
+</body>
+
+</html>

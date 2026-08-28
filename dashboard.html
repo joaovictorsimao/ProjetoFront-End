@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema de Oficina</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Menu -->
+
+        <aside class="menu">
+
+            <h2>OFICINA</h2>
+
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a href="dashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="clientes.html">
+                            Clientes
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="nova-os.html">
+                            Nova Ordem
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="historico.html">
+                            Histórico
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="relatorios.html">
+                            Relatórios
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="perfil.html">
+                            Perfil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" id="logout">
+                            Sair
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+        <!-- Conteúdo -->
+
+        <main class="conteudo">
+
+            <header>
+
+                <h1>Dashboard</h1>
+
+                <p id="nomeOficina">
+                    Bem-vindo!
+                </p>
+
+            </header>
+
+            <section class="cards">
+
+                <div class="card">
+                    <h3>Clientes</h3>
+                    <h2 id="totalClientes">0</h2>
+                </div>
+
+                <div class="card">
+                    <h3>Ordens Abertas</h3>
+                    <h2 id="ordensAbertas">0</h2>
+                </div>
+
+                <div class="card">
+                    <h3>Ordens Concluídas</h3>
+                    <h2 id="ordensConcluidas">0</h2>
+                </div>
+
+                <div class="card">
+                    <h3>Faturamento</h3>
+                    <h2 id="faturamento">
+                        R$ 0,00
+                    </h2>
+                </div>
+
+            </section>
+
+            <section class="ultimos-servicos">
+
+                <h2>Últimas Ordens de Serviço</h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Cliente</th>
+                            <th>Veículo</th>
+                            <th>Serviço</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="listaOrdens">
+
+                        <tr>
+
+                            <td colspan="4">
+                                Nenhuma ordem cadastrada.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/storage.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

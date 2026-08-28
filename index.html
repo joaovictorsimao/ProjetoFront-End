@@ -1,55 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Tela de Acesso</title>
-    </head>
-    <body>
-        <div class="container">
+<html lang="pt-BR">
 
-            <div class="box_login">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Oficina</title>
 
-        <header>
-            <h1>TELA DE ACESSO</h1>
-        </header>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-        <br>
+<body>
 
-        <div>
-        <label>
-            <label for="email">email</label>
-            <input type="email" name="email" id="email">
-            <img src="img/icons8-customer-30.png" alt="">
-        </label>
-        </div>
+    <div class="carregando">
+        <h1>Sistema de Oficina</h1>
+        <p>Carregando...</p>
+    </div>
 
-        <br>
+    <script>
+        const usuario = localStorage.getItem("usuarioLogado");
 
-        <div>
-        <label>
-            <label for="password">senha</label>
-            <input type="password" name="senha" id="senha">
-            <img src="img/icons8-password-30.png" alt="">
-        </label>
-        </div>
+        if (usuario) {
+            window.location.href = "dashboard.html";
+        } else {
+            window.location.href = "login.html";
+        }
+    </script>
 
-        <br>
-    
-        <div>
-        <label>
-            <input type="button" value="CONECTE-SE"></label>
-        </div>
+    <script src="js/index.js"></script>
 
-        <div>
-            <hr class="h1">
-        </div>
 
-        <div>
-            <p>
-            <a href="#">criar conta!</a>
-            </p>
-        </div>
-    </body>
+</body>
+
 </html>

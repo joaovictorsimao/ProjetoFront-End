@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perfil da Oficina</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="menu">
+
+        <h2>OFICINA</h2>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="dashboard.html">Dashboard</a></li>
+
+                <li><a href="clientes.html">Clientes</a></li>
+
+                <li><a href="nova-os.html">Nova Ordem</a></li>
+
+                <li><a href="historico.html">Histórico</a></li>
+
+                <li><a href="relatorios.html">Relatórios</a></li>
+
+                <li><a href="perfil.html">Perfil</a></li>
+
+                <li><a href="login.html">Sair</a></li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <main class="conteudo">
+
+        <h1>Perfil da Oficina</h1>
+
+        <form id="perfilForm">
+
+            <label>Nome da Oficina</label>
+            <input
+                type="text"
+                id="oficina"
+            >
+
+            <label>Nome do Proprietário</label>
+            <input
+                type="text"
+                id="proprietario"
+            >
+
+            <label>Telefone</label>
+            <input
+                type="text"
+                id="telefone"
+            >
+
+            <label>Cidade</label>
+            <input
+                type="text"
+                id="cidade"
+            >
+
+            <label>E-mail</label>
+            <input
+                type="email"
+                id="email"
+            >
+
+            <label>Nova Senha</label>
+            <input
+                type="password"
+                id="senha"
+                placeholder="Deixe em branco para não alterar"
+            >
+
+            <br><br>
+
+            <button type="submit">
+
+                Salvar Alterações
+
+            </button>
+
+        </form>
+
+    </main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/perfil.js"></script>
+
+</body>
+
+</html>

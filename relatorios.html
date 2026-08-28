@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Relatórios</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="menu">
+
+        <h2>OFICINA</h2>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="dashboard.html">Dashboard</a></li>
+
+                <li><a href="clientes.html">Clientes</a></li>
+
+                <li><a href="nova-os.html">Nova Ordem</a></li>
+
+                <li><a href="historico.html">Histórico</a></li>
+
+                <li><a href="relatorios.html">Relatórios</a></li>
+
+                <li><a href="perfil.html">Perfil</a></li>
+
+                <li><a href="login.html">Sair</a></li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <main class="conteudo">
+
+        <h1>Relatórios</h1>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Total de Clientes</h3>
+
+                <h2 id="totalClientes">0</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Ordens de Serviço</h3>
+
+                <h2 id="totalOrdens">0</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Ordens Concluídas</h3>
+
+                <h2 id="ordensConcluidas">0</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Faturamento Total</h3>
+
+                <h2 id="faturamentoTotal">
+
+                    R$ 0,00
+
+                </h2>
+
+            </div>
+
+        </section>
+
+        <br>
+
+        <h2>Últimas Ordens</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Cliente</th>
+
+                    <th>Veículo</th>
+
+                    <th>Status</th>
+
+                    <th>Valor</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="listaRelatorio">
+
+                <tr>
+
+                    <td colspan="4">
+
+                        Nenhuma informação encontrada.
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/relatorios.js"></script>
+
+</body>
+
+</html>
